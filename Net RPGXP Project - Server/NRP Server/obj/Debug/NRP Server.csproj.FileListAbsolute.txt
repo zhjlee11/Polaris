@@ -1,0 +1,214 @@
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\System.Net.Http.dll
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\System.Net.Http.xml
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojResolveAssemblyReference.cache
+C:\Users\win10\Desktop\NRP Beta 1.0\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+C:\Users\win10\Desktop\NRP Beta 1.0\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+C:\Users\win10\Desktop\NRP Beta 1.0\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+E:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+E:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+E:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\System.Net.Http.dll
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\bin\Debug\System.Net.Http.xml
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojResolveAssemblyReference.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojResolveAssemblyReference.cache
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojResolveAssemblyReference.cache
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(크리티컬쉐이크완성)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(크리티컬쉐이크완성)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(크리티컬쉐이크완성)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+D:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode.cs\프로그래밍\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojResolveAssemblyReference.cache
+L:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.NRP_Server.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CoreCompileInputs.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\Renci.SshNet.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe.config
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.exe
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\NRP_Server.pdb
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\BouncyCastle.Crypto.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\Google.Protobuf.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\Renci.SshNet.dll
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Data.EntityFramework.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\bin\Debug\MySql.Web.xml
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csprojAssemblyReference.cache
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe.config
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP Server.csproj.CopyComplete
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.exe
+G:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - Server\NRP Server\obj\Debug\NRP_Server.pdb

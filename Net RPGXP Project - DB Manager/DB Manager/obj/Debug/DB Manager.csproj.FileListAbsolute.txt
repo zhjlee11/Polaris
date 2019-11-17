@@ -1,0 +1,213 @@
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\bin\Debug\DB Manager.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB Manager.csprojResolveAssemblyReference.cache
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.Cache
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB Manager.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojResolveAssemblyReference.cache
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.Cache
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+C:\Users\win10\Desktop\NRP 1.0\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojResolveAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.Cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojAssemblyReference.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CoreCompileInputs.cache
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CopyComplete
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+D:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP Beta 1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+C:\Users\win10\Desktop\NRP_Beta_1.6.1\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojResolveAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(발사체올페)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.Cache
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojResolveAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.Cache
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+G:\KaliNode.cs\프로그래밍\RMXP 온라인 엔진\Net RMXP Project\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\Google.Protobuf.dll
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\BouncyCastle.Crypto.dll
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojAssemblyReference.cache
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.cache
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CoreCompileInputs.cache
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CopyComplete
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+G:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\Google.Protobuf.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojAssemblyReference.cache
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.cache
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CoreCompileInputs.cache
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CopyComplete
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode.cs\프로그래밍\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\Google.Protobuf.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojAssemblyReference.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CoreCompileInputs.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CopyComplete
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(현)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe.config
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\DB Manager.pdb
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\Google.Protobuf.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\BouncyCastle.Crypto.dll
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\bin\Debug\MySql.Data.xml
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csprojAssemblyReference.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDropItemForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addEnemyPositionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addFunctionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addStoreForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Dialog.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addActionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addConActionForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.mainForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addDataForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.addMessageForm.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB_Manager.Properties.Resources.resources
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.GenerateResource.cache
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.csproj.CopyComplete
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.exe
+F:\KaliNode\programming\RPG Maker\RMXP온라인엔진\NetRMXPProject\NRP_Beta_1.6.1(Now)\Net RPGXP Project - DB Manager\DB Manager\obj\Debug\DB Manager.pdb
