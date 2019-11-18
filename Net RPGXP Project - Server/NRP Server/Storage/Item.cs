@@ -65,6 +65,8 @@ namespace NRP_Server
         public string method_name { get; private set; }
         public int method_arg { get; private set; }
         public int animation_id { get; private set; }
+        public int ECollecting { get; private set; }
+        public int EMining { get; private set; }
 
         public Item(DataRow rs)
         {
@@ -92,6 +94,8 @@ namespace NRP_Server
             method_name = rs["method_name"].ToString();
             method_arg = Convert.ToInt32(rs["method_arg"]);
             animation_id = Convert.ToInt32(rs["animation_id"]);
+            ECollecting = Convert.ToInt32(rs["ecollection"]);
+            EMining = Convert.ToInt32(rs["emining"]);
         }
 
         public Item(DataRow rs, Item item)
@@ -120,6 +124,8 @@ namespace NRP_Server
             method_name = item.method_name;
             method_arg = item.method_arg;
             animation_id = item.animation_id;
+            ECollecting = item.ECollecting;
+            EMining = item.EMining;
         }
     }
 }

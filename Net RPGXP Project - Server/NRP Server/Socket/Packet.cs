@@ -971,6 +971,8 @@ namespace NRP_Server
             msg.Add("use", item.itemData.use ? 1 : 0);
             msg.Add("number", item.number);
             msg.Add("equip", equip);
+            msg.Add("ECollecting", item.itemData.ECollecting);
+            msg.Add("EMining", item.itemData.EMining);
             return msg;
         }
 
@@ -1206,6 +1208,8 @@ namespace NRP_Server
             msg.Add("sell", item.sell ? 1 : 0);
             msg.Add("use", item.use ? 1 : 0);
             msg.Add("number", store_item.number);
+            msg.Add("ECollecting", item.ECollecting);
+            msg.Add("EMining", item.EMining);
             return msg;
         }
 
@@ -1280,6 +1284,8 @@ namespace NRP_Server
             msg.Add("use", item.itemData.use ? 1 : 0);
             msg.Add("number", item.number);
             msg.Add("equip", equip);
+            msg.Add("ECollecting", item.itemData.ECollecting);
+            msg.Add("EMining", item.itemData.EMining);
             return msg;
         }
 
