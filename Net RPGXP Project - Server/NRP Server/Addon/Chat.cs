@@ -22,6 +22,9 @@ namespace NRP_Server
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
 
+            Command hpadd = new Command("/hpadd ([0-9]+)");
+            Command mpadd = new Command("/mpadd ([0-9]+)");
+
 
 
             /* Command seed = new Command("/seed");
@@ -70,7 +73,28 @@ namespace NRP_Server
                     return true;
                 }
 
+            if (hpadd.isMatch(msg))
+                if (UserData.Users[clientData].admin)
+                {
+                    string[] data = hpadd.MatchData(msg);
 
+                    if (UserData.Users[clientData].character.maxhp <= Convert.ToInt32(data[1])) { UserData.Users[clientData].character.hp = UserData.Users[clientData].character.maxhp; }
+                    else if (0 >= Convert.ToInt32(data[1])) { UserData.Users[clientData].character.damage(UserData.Users[clientData].character.hp.ToString(), false); }
+                    UserData.Users[clientData].character.hp = Convert.ToInt32(data[1]);
+                    clientData.SendPacket(Packet.CharacterStatusUpdate(UserData.Users[clientData].character));
+                    return true;
+                }
+            if (mpadd.isMatch(msg))
+                if (UserData.Users[clientData].admin)
+                {
+                    string[] data = mpadd.MatchData(msg);
+
+                    if (UserData.Users[clientData].character.maxmp <= Convert.ToInt32(data[1])) { UserData.Users[clientData].character.mp = UserData.Users[clientData].character.maxmp; }
+                    else if (0 >= Convert.ToInt32(data[1])) { UserData.Users[clientData].character.mp = 0; }
+                    UserData.Users[clientData].character.mp = Convert.ToInt32(data[1]);
+                    clientData.SendPacket(Packet.CharacterStatusUpdate(UserData.Users[clientData].character));
+                    return true;
+                }
 
             if (give.isMatch(msg))
                 if (UserData.Users[clientData].admin)

@@ -446,8 +446,8 @@ namespace NRP_Server
 
         public bool isStun()
         {
-            if (this.canctrl > 0) { this.canctrl--; Console.WriteLine("스턴 상태"); return true; }
-            else { Console.WriteLine("스턴 상태 아닙"); return false; }
+            if (this.canctrl > 0) { this.canctrl--; return true; }
+            else { return false; }
         }
 
         public void moveto(int _x, int _y, int _dir = 2)

@@ -123,6 +123,7 @@
     <Compile Include="Socket\Handler.cs" />
     <Compile Include="Socket\Packet.cs" />
     <Compile Include="Storage\Character.cs" />
+    <Compile Include="Storage\climate.cs" />
     <Compile Include="Storage\Combination.cs" />
     <Compile Include="Storage\Damage.cs" />
     <Compile Include="Storage\Exp.cs" />

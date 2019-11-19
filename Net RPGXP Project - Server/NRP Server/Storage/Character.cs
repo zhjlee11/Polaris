@@ -18,7 +18,7 @@ namespace NRP_Server
         virtual public int maxhp { get; protected set; }
         virtual public int maxmp { get; protected set; }
         virtual public int hp { get; set; }
-        virtual public int mp { get; protected set; }
+        virtual public int mp { get; set; }
         virtual public int str { get; protected set; }
         virtual public int dex { get; protected set; }
         virtual public int Int { get; protected set; }

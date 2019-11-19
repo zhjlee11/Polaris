@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using NRP_Server.NetObject;
 using MySqlX.XDevAPI;
+using NRP_Server.Storage;
 
 namespace NRP_Server
 {
@@ -18,11 +19,15 @@ namespace NRP_Server
         public ArrayList Enemies;
         public int mapid { get; private set; }
         public int seed { get; private set; }
+        public climate fieldclimate { get; set; } = null;
+
+        public double time { get; set; }
 
         public Field(int _mapid, int _seed)
         {
             mapid = _mapid;
             seed = _seed;
+            time = 0;
             loadEnemyData();
         }
 
@@ -224,6 +229,10 @@ namespace NRP_Server
             loadEnemy(u);
             loadDropItem(u);
             u.loadItems();
+
+            if(fieldclimate!=null) {
+                u.fieldData.fieldclimate.weatherNotice(u);
+            }
             return true;
         }
         // 필드에서 해당 유저를 퇴장시킵니다.
@@ -259,15 +268,71 @@ namespace NRP_Server
 
         }
 
-        // 몬스터 업데이트
+        // 0.1초마다 실행되는 함수
         public void update()
         {
+            
+
             if (Users.Count == 0) { return; }
             ArrayList enemylist = Enemies;
             foreach (Enemy obj in enemylist) { obj.update(); }
             ArrayList Userlist = new ArrayList(Users.Keys);
             try { foreach (int i in Userlist) { Users[i].update(); } }
             catch (Exception e) { Console.WriteLine(e); }
+
+            time += 1;
+
+            //(자연수) 초일때만, 즉 1초마다 실행
+            if (time%10 == 0) {
+                if (fieldclimate != null) {
+                    int sec = Convert.ToInt32(time / 10);
+                    //이미 날씨가 있어서, 그에 대한 효과 실행
+                    if (sec % 10 == 0 && fieldclimate.weatherno == 1) {
+                        fieldclimate.weatherEffect(this);
+                    }
+                    else if (sec/10 % 3 == 0 && fieldclimate.weatherno == 2)
+                    {
+                        fieldclimate.weatherEffect(this);
+                    }
+                    else if (sec % 5 == 0 && fieldclimate.weatherno == 3)
+                    {
+                        fieldclimate.weatherEffect(this);
+                    }
+                    else { }
+
+                    if (fieldclimate.duration - 1 <= 0) { 
+                        climate.climates.Remove(fieldclimate.no);
+                        fieldclimate = null;
+                        foreach (UserCharacter u in Users.Values)
+                        {
+                            u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
+                        }
+                    }
+                    else { fieldclimate.duration-=1;}
+                   }
+                else {
+                    //날씨가 없어서, 날씨 랜덤 생성
+                    Random r = new Random();
+                    int rn = r.Next(0, 1000);
+                    int dur = r.Next(60, 60 * 5);
+                    if (rn <= 40) {
+                        this.fieldclimate = new climate(1, dur);
+                        this.fieldclimate.weatherNotice(this);
+                    }
+                    else if (40 < rn && rn <= 80)
+                    {
+                        this.fieldclimate = new climate(2, dur);
+                        this.fieldclimate.weatherNotice(this);
+                    }
+                    else if (80 < rn && rn <= 120)
+                    {
+                        this.fieldclimate = new climate(3, dur);
+                        this.fieldclimate.weatherNotice(this);
+                    }
+                }
+                
+            }
+            
         }
     }
 }
