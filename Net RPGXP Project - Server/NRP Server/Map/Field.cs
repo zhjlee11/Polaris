@@ -240,6 +240,7 @@ namespace NRP_Server
         {
             if (!Users.ContainsKey(no))
                 return false;
+            Users[no].userData.clientData.SendPacket(Packet.WeatherClear());
             foreach (UserCharacter _char in Users.Values)
             {
                 if (_char.no == no) { continue; }
@@ -250,6 +251,8 @@ namespace NRP_Server
                     enemy.target = null;
             Users[no].fieldData = null;
             Users.Remove(no);
+
+            
             return true;
         }
 
@@ -306,6 +309,7 @@ namespace NRP_Server
                         foreach (UserCharacter u in Users.Values)
                         {
                             u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
+                            u.userData.clientData.SendPacket(Packet.WeatherClear());
                         }
                     }
                     else { fieldclimate.duration-=1;}
@@ -318,16 +322,19 @@ namespace NRP_Server
                     if (rn <= 40) {
                         this.fieldclimate = new climate(1, dur);
                         this.fieldclimate.weatherNotice(this);
+                        Console.WriteLine(dur);
                     }
                     else if (40 < rn && rn <= 80)
                     {
                         this.fieldclimate = new climate(2, dur);
                         this.fieldclimate.weatherNotice(this);
+                        Console.WriteLine(dur);
                     }
                     else if (80 < rn && rn <= 120)
                     {
                         this.fieldclimate = new climate(3, dur);
                         this.fieldclimate.weatherNotice(this);
+                        Console.WriteLine(dur);
                     }
                 }
                 

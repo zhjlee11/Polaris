@@ -59,6 +59,7 @@ namespace NRP_Server.Storage
                 foreach (UserCharacter u in f.Users.Values)
                 {
                     u.userData.clientData.SendPacket(Packet.Notice(143, 0, 255, name + "이/가 내리기 시작합니다. " + getEffect()));
+                    u.userData.clientData.SendPacket(Packet.Weather(weatherno, duration*60));
                 }
             }   
         }
@@ -72,6 +73,7 @@ namespace NRP_Server.Storage
             else
             {
                 u.userData.clientData.SendPacket(Packet.Notice(143, 0, 255, name + "이/가 내리기 시작합니다. " + getEffect()));
+                u.userData.clientData.SendPacket(Packet.Weather(weatherno, duration*60));
             }
         }
 

@@ -109,6 +109,8 @@ namespace NRP_Server
         private const int STATUS_INT = 929;
         private const int STATUS_LUK = 930;
 
+        private const int WEATHER = 931;
+        private const int WEATHER_CLEAR = 932;
 
         // Admin
         public static string[] ADMIN = { "admin" };
@@ -1314,6 +1316,21 @@ namespace NRP_Server
             Hashtable msg = new Hashtable();
             msg.Add("part", PARTY_INFO_REPLY);
             msg.Add("userlist", userlist);
+            return msg;
+        }
+
+        public static Hashtable Weather(int type, int dur)
+        {
+            Hashtable msg = new Hashtable();
+            msg.Add("part", WEATHER);
+            msg.Add("type", type);
+            msg.Add("duration", dur);
+            return msg;
+        }
+
+        public static Hashtable WeatherClear() {
+            Hashtable msg = new Hashtable();
+            msg.Add("part", WEATHER_CLEAR);
             return msg;
         }
     }
