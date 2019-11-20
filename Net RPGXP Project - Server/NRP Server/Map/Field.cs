@@ -218,6 +218,7 @@ namespace NRP_Server
         // 필드에 해당 유저를 입장시킵니다.
         public bool join(UserCharacter u, int _x, int _y)
         {
+            if (u == null) { return false; }
             if (Users.ContainsKey(u.no))
                 return false;
             AllSendPacket(Packet.CharacterCreate(u));
@@ -241,6 +242,7 @@ namespace NRP_Server
             if (!Users.ContainsKey(no))
                 return false;
             Users[no].userData.clientData.SendPacket(Packet.WeatherClear());
+            
             foreach (UserCharacter _char in Users.Values)
             {
                 if (_char.no == no) { continue; }
@@ -293,7 +295,7 @@ namespace NRP_Server
                     if (sec % 10 == 0 && fieldclimate.weatherno == 1) {
                         fieldclimate.weatherEffect(this);
                     }
-                    else if (sec/10 % 3 == 0 && fieldclimate.weatherno == 2)
+                    else if (sec % 3 == 0 && fieldclimate.weatherno == 2)
                     {
                         fieldclimate.weatherEffect(this);
                     }
@@ -306,7 +308,8 @@ namespace NRP_Server
                     if (fieldclimate.duration - 1 <= 0) { 
                         climate.climates.Remove(fieldclimate.no);
                         fieldclimate = null;
-                        foreach (UserCharacter u in Users.Values)
+                        Dictionary<int, UserCharacter> ul = new Dictionary<int, UserCharacter>(Users);
+                        foreach (UserCharacter u in ul.Values)
                         {
                             u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
                             u.userData.clientData.SendPacket(Packet.WeatherClear());
@@ -319,22 +322,19 @@ namespace NRP_Server
                     Random r = new Random();
                     int rn = r.Next(0, 1000);
                     int dur = r.Next(60, 60 * 5);
-                    if (rn <= 40) {
+                    if (rn <= 30) {
                         this.fieldclimate = new climate(1, dur);
                         this.fieldclimate.weatherNotice(this);
-                        Console.WriteLine(dur);
                     }
-                    else if (40 < rn && rn <= 80)
+                    else if (30 < rn && rn <= 60)
                     {
                         this.fieldclimate = new climate(2, dur);
                         this.fieldclimate.weatherNotice(this);
-                        Console.WriteLine(dur);
                     }
-                    else if (80 < rn && rn <= 120)
+                    else if (60 < rn && rn <= 90)
                     {
                         this.fieldclimate = new climate(3, dur);
                         this.fieldclimate.weatherNotice(this);
-                        Console.WriteLine(dur);
                     }
                 }
                 

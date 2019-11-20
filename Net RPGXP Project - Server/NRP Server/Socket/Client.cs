@@ -98,6 +98,8 @@ namespace NRP_Server
                 Array.Copy(header, 0, packet, 0, header.Length);
                 Array.Copy(body, 0, packet, header.Length, body.Length);
 
+
+                if (!workSocket.Connected) { return; }
                 // 보낼 데이터, 시작위치, 길이, 타입, 메서드, 파라미터
                 workSocket.BeginSend(packet, 0, packet.Length, SocketFlags.None, new AsyncCallback(SendCallBack), workSocket);
             }

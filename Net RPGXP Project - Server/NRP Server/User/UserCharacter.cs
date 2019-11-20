@@ -198,6 +198,8 @@ namespace NRP_Server
             y = ToInt(rs["map_y"]);
             direction = ToInt(rs["direction"]);
             move_speed = ToInt(rs["move_speed"]);
+
+            fieldData = Map.Maps[mapid].Fields[0];
         }
         public void loadItems()
         {
@@ -430,6 +432,7 @@ namespace NRP_Server
             }
             else
             {
+                if (fieldData == null) { return; }
                 if (fieldData.passable(x, y, dir))
                 {
                     x += (dir == 4 ? -1 : dir == 6 ? 1 : 0);
@@ -438,6 +441,7 @@ namespace NRP_Server
                 turn(dir);
             }
             if (!fieldData.portal(this))
+                if (this == null) { return; }
                 fieldData.AllSendPacket(Packet.Move(this));
 
 
@@ -500,6 +504,7 @@ namespace NRP_Server
         }
         public void animation(int id)
         {
+            if (this == null) { return; }
             fieldData.AllSendPacket(Packet.CharacterAnimation(this, id));
         }
 

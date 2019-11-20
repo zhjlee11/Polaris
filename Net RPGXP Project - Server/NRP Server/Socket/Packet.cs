@@ -417,6 +417,8 @@ namespace NRP_Server
                                 u.loadData(rs);
                                 UserData.Users.Add(clientData, u);
 
+                                
+
                                 // 온라인으로 변경
                                 Mysql.Query($"UPDATE user_information SET online = '1' WHERE no = '{u.no}'");
                                 clientData.SendPacket(Login(u));
@@ -567,6 +569,7 @@ namespace NRP_Server
 
                     case FINISH_MAKE_OWN:
                         c = UserData.Users[clientData].character;
+                        if (c == null) { return true; }
                         Dictionary<NRP_Server.Item, UserItem> cinventory = new Dictionary<Item, UserItem>(c.Inventory);
                         foreach (UserItem ui in cinventory.Values)
                         {
