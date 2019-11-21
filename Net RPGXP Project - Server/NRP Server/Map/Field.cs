@@ -218,30 +218,31 @@ namespace NRP_Server
         // 필드에 해당 유저를 입장시킵니다.
         public bool join(UserCharacter u, int _x, int _y)
         {
-            if (u == null) { return false; }
-            if (Users.ContainsKey(u.no))
-                return false;
-            AllSendPacket(Packet.CharacterCreate(u));
+            if (Users.ContainsKey(u.no)) { return false; }
             u.FieldData = this;
+
+            if (fieldclimate != null && u.fieldData.fieldclimate == this.fieldclimate)
+            { u.fieldData.fieldclimate.weatherNotice(u); }
+            else { u.userData.clientData.SendPacket(Packet.WeatherClear()); }
             Users.Add(u.no, u);
+            AllSendPacket(Packet.CharacterCreate(u));
             u.moveto(_x, _y, u.direction);
             loadUser(u);
             loadNPC(u);
             loadEnemy(u);
             loadDropItem(u);
-            u.loadItems();
 
-            if(fieldclimate!=null) {
-                u.fieldData.fieldclimate.weatherNotice(u);
-            }
+
             return true;
         }
+
         // 필드에서 해당 유저를 퇴장시킵니다.
         public bool leave(int no)
         {
             if (!Users.ContainsKey(no))
                 return false;
-            Users[no].userData.clientData.SendPacket(Packet.WeatherClear());
+
+            
             
             foreach (UserCharacter _char in Users.Values)
             {
@@ -252,6 +253,7 @@ namespace NRP_Server
                 if (enemy.target == Users[no])
                     enemy.target = null;
             Users[no].fieldData = null;
+            Users[no].EverReload = 0;
             Users.Remove(no);
 
             
@@ -284,6 +286,16 @@ namespace NRP_Server
             ArrayList Userlist = new ArrayList(Users.Keys);
             try { foreach (int i in Userlist) { Users[i].update(); } }
             catch (Exception e) { Console.WriteLine(e); }
+            foreach (UserCharacter ui in Users.Values) {
+                if (ui.EverReload == 0) {
+                    loadUser(ui);
+                    loadNPC(ui);
+                    loadEnemy(ui);
+                    loadDropItem(ui);
+                    ui.EverReload = 1;
+                }
+            }
+                
 
             time += 1;
 
@@ -306,10 +318,9 @@ namespace NRP_Server
                     else { }
 
                     if (fieldclimate.duration - 1 <= 0) { 
-                        climate.climates.Remove(fieldclimate.no);
                         fieldclimate = null;
-                        Dictionary<int, UserCharacter> ul = new Dictionary<int, UserCharacter>(Users);
-                        foreach (UserCharacter u in ul.Values)
+                        climate.climates.Remove(fieldclimate.no);
+                        foreach (UserCharacter u in Users.Values)
                         {
                             u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
                             u.userData.clientData.SendPacket(Packet.WeatherClear());

@@ -50,6 +50,8 @@ namespace NRP_Server
 
         public int partyno { get; set; } = -1;
 
+        public int EverReload { get; set; }
+
         public override int str
         {
             get
@@ -478,7 +480,8 @@ namespace NRP_Server
             if (hp <= 0)
             {
 
-
+                hp = 0;
+                userData.clientData.SendPacket(Packet.CharacterStatusUpdate(this));
                 //seed 추출
                 int oldseed = this.fieldData.seed;
                 Field oldfield = this.fieldData;

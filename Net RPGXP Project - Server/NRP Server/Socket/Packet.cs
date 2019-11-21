@@ -582,6 +582,7 @@ namespace NRP_Server
                             c.gainItem(ui.itemData, ui.number);
                         }
                         c.ownitems = new Dictionary<Item, UserItem>();
+                        c.userData.clientData.SendPacket(Packet.CharacterStatusUpdate(c));
                         c.userData.clientData.SendPacket(Packet.UserChat("\\C[250,50,50]당신은 죽었습니다!"));
                         break;
 
@@ -1063,7 +1064,6 @@ namespace NRP_Server
             msg.Add("image", c.image);
             msg.Add("mapid", c.mapid);
             msg.Add("dead", c.IsDead ? 1 : 0);
-
             return msg;
         }
 

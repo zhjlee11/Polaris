@@ -17,7 +17,7 @@ namespace NRP_Server
         public static bool Command(ClientInfo clientData, string msg)
         {
             Command admin = new Command("/admin");
-            Command learskilltest = new Command("/learnskill");
+            Command test = new Command("/test");
             // /give user_name item_no item_num
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
@@ -52,10 +52,10 @@ namespace NRP_Server
                     clientData.SendPacket(Packet.UserChat("\\C[50,250,50][관리] 관리자 모드로 변경되었습니다."));
                     return true;
                 }
-            if (learskilltest.isMatch(msg))
+            if (test.isMatch(msg))
                 if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name))
                 {
-                    UserData.Users[clientData].character.learnSkill(Skill.Skills[5]);
+                    UserData.Users[clientData].character.fieldData.loadEnemy(UserData.Users[clientData].character);
                     return true;
                 }
 

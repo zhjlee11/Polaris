@@ -66,6 +66,7 @@ namespace NRP_Server.Storage
 
         public void weatherNotice(UserCharacter u)
         {
+            if (u == null || u.userData.clientData == null) { return; }
             if (weatherno == 0)
             {
                 u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
