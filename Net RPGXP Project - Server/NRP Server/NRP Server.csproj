@@ -101,6 +101,7 @@
     <Compile Include="Addon\Msg.cs" />
     <Compile Include="Addon\Mysql.cs" />
     <Compile Include="Addon\StringConverter.cs" />
+    <Compile Include="Group\DefenseGame.cs" />
     <Compile Include="Group\Party.cs" />
     <Compile Include="Map\Field.cs" />
     <Compile Include="Map\Map.cs" />
