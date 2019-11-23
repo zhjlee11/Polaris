@@ -15,6 +15,8 @@ namespace NRP_Server.Group
         public UserCharacter leader { get; set; }
         public List<UserCharacter> member { get; set; }
 
+        public int maxnum { get; set; } = 7;
+
         public Party(UserCharacter u) {
             this.no = parties.Count();
             u.partyno = this.no;

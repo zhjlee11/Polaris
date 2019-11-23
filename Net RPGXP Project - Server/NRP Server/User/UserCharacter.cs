@@ -51,6 +51,12 @@ namespace NRP_Server
         public int partyno { get; set; } = -1;
 
         public int EverReload { get; set; }
+        public int rogueno { get; set; } = -1;
+        public int soul { get; set; } = 0;
+
+        public int oldx { get; set; }
+        public int oldy { get; set; }
+        public Field oldField { get; set; } = null;
 
         public override int str
         {
@@ -346,7 +352,21 @@ namespace NRP_Server
             fieldData.addDropItem(x, y, item, number);
         }
 
-        
+        public void trashItem(Item item, int number, int x, int y, Field map)
+        {
+            if (!Inventory.ContainsKey(item)) { return; }
+            if (item.type != 0)
+            {
+                if (Inventory[item].number < number || number == 0) { return; }
+            }
+            else if (number != 0)
+                return;
+
+            loseItem(item, number);
+            map.addDropItem(x, y, item, number);
+        }
+
+
 
         public void useItem(Item item)
         {
@@ -375,6 +395,8 @@ namespace NRP_Server
                 userData.clientData.SendPacket(Packet.Dialog(0, "기술 습득 오류", "이미 배운 기술입니다."));
             }
         }
+
+        
 
         // 레벨 관련
         public void gainExp(int value)
@@ -421,7 +443,13 @@ namespace NRP_Server
         {
             string str = "";
             str += $"name='{name}',image='{image}',level='{level}',guild='{guild}',`job`='{job}',`exp`='{exp}',gold='{gold}',maxhp='{Mymaxhp}',maxmp='{Mymaxmp}',hp='{hp}',mp='{mp}',str='{Mystr}',dex='{Mydex}',`int`='{Myint}',luk='{Myluk}',point='{point}',";
-            str += $"map_id='{mapid}',map_x='{x}',map_y='{y}',direction='{direction}',move_speed='{move_speed}'";
+            if (rogueno == -1)
+            {
+                str += $"map_id='{mapid}',map_x='{x}',map_y='{y}',direction='{direction}',move_speed='{move_speed}'";
+            }
+            else {
+                str += $"map_id='1',map_x='11',map_y='9',direction='{direction}',move_speed='{move_speed}'";
+            }
             Mysql.Query($"UPDATE user_character SET {str} WHERE no = '{no}'");
         }
 
@@ -445,7 +473,15 @@ namespace NRP_Server
             if (!fieldData.portal(this))
                 if (this == null) { return; }
                 fieldData.AllSendPacket(Packet.Move(this));
-
+            if (x == 13 && y == 0 && rogueno != -1) {
+                if (Rogue.rogues[rogueno].NowStage.isalldead())
+                {
+                    Rogue.rogues[rogueno].StageClear();
+                }
+                else {
+                    userData.clientData.SendPacket(Packet.Notice(255, 0, 0, "모든 몬스터가 제거되지 않았습니다."));
+                }
+            }
 
 
         }
@@ -479,6 +515,14 @@ namespace NRP_Server
             // 죽었다면?
             if (hp <= 0)
             {
+                userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[rogueno], -1));
+
+                oldx = x;
+                oldy = y;
+                oldField = fieldData;
+
+                rogueno = -1;
+                
 
                 hp = 0;
                 userData.clientData.SendPacket(Packet.CharacterStatusUpdate(this));
@@ -499,6 +543,7 @@ namespace NRP_Server
                     
                 }
                 fieldData = null;
+
                 //UI 귀속 설정 UI On
                 this.userData.clientData.SendPacket(Packet.SetMakeOwn());
             }
@@ -710,6 +755,17 @@ namespace NRP_Server
                 gainItem(ui.itemData, ui.number);
             }
             return true;
+        }
+
+        public void ReloadUser(UserCharacter u) {
+            userData.clientData.SendPacket(Packet.DeleteCharacter(u));
+            userData.clientData.SendPacket(Packet.CharacterCreate(u));
+        }
+
+        public void ReloadUser()
+        {
+            userData.clientData.SendPacket(Packet.DeleteCharacter(this));
+            userData.clientData.SendPacket(Packet.CharacterCreate(this));
         }
     }
 }

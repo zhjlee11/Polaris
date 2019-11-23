@@ -17,7 +17,7 @@ namespace NRP_Server
         }
         #endregion
         // Static Variables
-        public const int MAP_SIZE = 6;
+        public const int MAP_SIZE = 10;
         public static Dictionary<int, Map> Maps = new Dictionary<int, Map>();
 
         public static void loadData()
@@ -131,6 +131,15 @@ namespace NRP_Server
             Fields.Add(_seed, new Field(id, _seed));
             return true;
         }
+        public Field newFieldRO(int _seed)
+        {
+            if (Fields.ContainsKey(_seed))
+                Fields.Remove(_seed);
+            Field a = new Field(id, _seed);
+            Fields.Add(_seed, a);
+            return a;
+        }
+
         public bool removeField(int _seed)
         {
             if (!Fields.ContainsKey(_seed))

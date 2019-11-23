@@ -53,6 +53,13 @@ namespace NRP_Server
                 Job.loadData();
                 Combination.loadrecipe();
 
+                //서버의 비정상적 종료로 인해, 영구적으로 온라인 상태로 표기되어있는 유저를 오프라인 상태로 변경
+                Mysql.Query("UPDATE user_information SET online=0");
+
+                Rogue.stagetype.Add(0, 8);
+                Rogue.stagetype.Add(1, 9);
+                Rogue.stagetype.Add(2, 10);
+
                 Msg.Info("서버가 정상적으로 실행되었습니다.");
                 // 멀티쓰레드 시작
                 runUpdate.Start();

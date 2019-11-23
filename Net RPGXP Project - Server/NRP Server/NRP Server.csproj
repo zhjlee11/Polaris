@@ -106,6 +106,7 @@
     <Compile Include="Map\Field.cs" />
     <Compile Include="Map\Map.cs" />
     <Compile Include="Map\Portal.cs" />
+    <Compile Include="Map\Rogue.cs" />
     <Compile Include="Map\Room.cs" />
     <Compile Include="NetObject\DropItem.cs" />
     <Compile Include="NetObject\Enemy.cs" />

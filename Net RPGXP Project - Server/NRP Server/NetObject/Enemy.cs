@@ -31,7 +31,7 @@ namespace NRP_Server
         public int pattern { get; set; }
         public int delay { get; private set; }
         public int delay_count { get; private set; }
-        public int rebirth_time { get; private set; }
+        public int rebirth_time { get; set; }
         public int speed_count { get; private set; }
         public int sight { get; private set; }
         public int animation_id { get; private set; }
@@ -292,7 +292,16 @@ namespace NRP_Server
                 if (Command.rand.Next(1000) + 1 <= item.rate)
                     fieldData.addDropItem(x, y, item);
             if (attacker is UserCharacter)
-                (attacker as UserCharacter).gainExp(exp); 
+            {
+                (attacker as UserCharacter).gainExp(exp);
+                if ((attacker as UserCharacter).rogueno != -1) { 
+                    (attacker as UserCharacter).soul += 1;
+                    (attacker as UserCharacter).userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[(attacker as UserCharacter).rogueno]));
+                }
+                
+            }
+
+          
         }
 
         public void animation(int id)

@@ -215,6 +215,12 @@ namespace NRP_Server
             AllSendPacket(Packet.DropItemDelete(index));
         }
 
+        public bool isalldead() {
+            foreach (Enemy ei in Enemies) {
+                if (!ei.IsDead) { return false; }
+            }
+            return true;
+        }
         // 필드에 해당 유저를 입장시킵니다.
         public bool join(UserCharacter u, int _x, int _y)
         {
@@ -301,6 +307,7 @@ namespace NRP_Server
 
             //(자연수) 초일때만, 즉 1초마다 실행
             if (time%10 == 0) {
+                if (mapid == 8 || mapid == 9 || mapid == 10) { return; }
                 if (fieldclimate != null) {
                     int sec = Convert.ToInt32(time / 10);
                     //이미 날씨가 있어서, 그에 대한 효과 실행
@@ -351,6 +358,13 @@ namespace NRP_Server
                 
             }
             
+        }
+
+        public bool dispose() {
+            if (!Map.Maps[mapid].Fields.ContainsKey(seed))
+                return false;
+            Map.Maps[mapid].Fields.Remove(seed);
+            return true;
         }
     }
 }

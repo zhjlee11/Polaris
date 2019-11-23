@@ -22,8 +22,8 @@ namespace NRP_Server
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
 
-            Command hpadd = new Command("/hpadd ([0-9]+)");
-            Command mpadd = new Command("/mpadd ([0-9]+)");
+            Command hpadd = new Command("/hpset ([0-9]+)");
+            Command mpadd = new Command("/mpset ([0-9]+)");
 
 
 
@@ -55,7 +55,13 @@ namespace NRP_Server
             if (test.isMatch(msg))
                 if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name))
                 {
-                    UserData.Users[clientData].character.fieldData.loadEnemy(UserData.Users[clientData].character);
+                    if (UserData.Users[clientData].character.rogueno != -1)
+                    {
+                        UserData.Users[clientData].character.userData.clientData.SendPacket(Packet.Notice(255, 0, 0, "이미 이너 월드에 들어와 있습니다."));
+                        return true;
+                    }
+                    Rogue rogue = new Rogue(UserData.Users[clientData].character);
+                    rogue.EnterNew();
                     return true;
                 }
 

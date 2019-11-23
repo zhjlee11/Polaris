@@ -112,6 +112,10 @@ namespace NRP_Server
         private const int WEATHER = 931;
         private const int WEATHER_CLEAR = 932;
 
+        private const int ROGUE_RELOAD = 933;
+
+        private const int SCREEN_FLASH = 934;
+
         // Admin
         public static string[] ADMIN = { "admin" };
         #endregion
@@ -268,6 +272,10 @@ namespace NRP_Server
                             //귀속
                             else
                             {
+                                if (UserData.Users[clientData].character.rogueno != -1) {
+                                    clientData.SendPacket(Notice(255, 0, 0, "이너 월드에서 죽었기 때문에, 귀속을 하지 않아도 모든 아이템이 보존됩니다."));
+                                    return true;
+                                }
                                 int makeownitem = 68; //귀속시키는 아이템 ID
                                 Item moi = NRP_Server.Item.Items[makeownitem];
                                 if (c.Inventory.ContainsKey(moi) == true)
@@ -571,19 +579,39 @@ namespace NRP_Server
                         c = UserData.Users[clientData].character;
                         if (c == null) { return true; }
                         Dictionary<NRP_Server.Item, UserItem> cinventory = new Dictionary<Item, UserItem>(c.Inventory);
-                        foreach (UserItem ui in cinventory.Values)
+                        if (c.rogueno == -1)
                         {
-                            c.loseItem(ui.itemData, ui.number);
+                            foreach (UserItem ui in cinventory.Values)
+                            {
+                                c.trashItem(ui.itemData, ui.number, c.oldx, c.oldy, c.oldField);
+                            }
                         }
+                        else { 
+                            Rogue.rogues.Remove(c.rogueno);
+                            c.rogueno = -1;
+                            c.gainItem(NRP_Server.Item.Items[Rogue.souldid], c.soul);
+                            c.soul = 0;
+                        }
+                            
                         c.hp = c.maxhp;
+                        
                         Map.Maps[1].Fields[0].join(c, 11, 9);
+                           
                         foreach (UserItem ui in c.ownitems.Values)
                         {
-                            c.gainItem(ui.itemData, ui.number);
+                                c.gainItem(ui.itemData, ui.number);
                         }
+
+
+
                         c.ownitems = new Dictionary<Item, UserItem>();
                         c.userData.clientData.SendPacket(Packet.CharacterStatusUpdate(c));
                         c.userData.clientData.SendPacket(Packet.UserChat("\\C[250,50,50]당신은 죽었습니다!"));
+
+                        foreach (UserCharacter uca in c.fieldData.Users.Values) {
+                            uca.ReloadUser(c);
+                        }
+                        c.ReloadUser();
                         break;
 
                     //씨앗
@@ -676,6 +704,7 @@ namespace NRP_Server
                     case PARTY_INVITE:
                         c = UserData.Users[clientData].character;
                         if (c.partyno == -1) { clientData.SendPacket(Notice(255, 0, 0, "들어가 있는 파티가 없습니다.")); return true; }
+                        if (Party.parties[c.partyno].member.Count() >= Party.parties[c.partyno].maxnum) { clientData.SendPacket(Notice(255, 0, 0, "파티의 최대 인원인 "+ Party.parties[c.partyno].maxnum.ToString() + "명이 다 찼습니다.")); return true; }
                         String nickname = recv["no"].ToString();
                         UserCharacter uc = null;
                         foreach (UserData ud in UserData.Users.Values) {
@@ -1336,5 +1365,27 @@ namespace NRP_Server
             msg.Add("part", WEATHER_CLEAR);
             return msg;
         }
+
+        public static Hashtable RogueReload(Rogue r, int ok=0) {
+            Hashtable msg = new Hashtable();
+            msg.Add("part", ROGUE_RELOAD);
+            msg.Add("soul", r.player.soul);
+            msg.Add("stage", r.stagenum);
+            msg.Add("ok", ok);
+            return msg;
+        }
+
+        public static Hashtable Flash(int color1, int color2, int color3, int duration)
+        {
+            Hashtable msg = new Hashtable();
+            msg.Add("part", SCREEN_FLASH);
+            msg.Add("color1", color1);
+            msg.Add("color2", color2);
+            msg.Add("color3", color3);
+            msg.Add("duration", duration);
+            return msg;
+        }
+
     }
+
 }
