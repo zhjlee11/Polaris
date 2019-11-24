@@ -116,6 +116,8 @@ namespace NRP_Server
 
         private const int SCREEN_FLASH = 934;
 
+        private const int EMOTICON = 935;
+
         // Admin
         public static string[] ADMIN = { "admin" };
         #endregion
@@ -783,6 +785,12 @@ namespace NRP_Server
                         c.UpLuk(ToInt(recv["num"]));
                         c.DownPoint(ToInt(recv["num"]));
                         c.ReloadStatus();
+                        break;
+
+                    case EMOTICON:
+                        c = UserData.Users[clientData].character;
+                        if(c==null) { return true; }
+                        if (Handler.emotions.Contains(ToInt(recv["no"]))) { c.animation(ToInt(recv["no"])); }
                         break;
 
                     #endregion

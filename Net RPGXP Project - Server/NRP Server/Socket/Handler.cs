@@ -26,6 +26,11 @@ namespace NRP_Server
         static int already = 0;
         private readonly object receiveSyncRoot = new object();
 
+        public static ArrayList emotions = new ArrayList { 
+            //이모티콘 애니메이션 no만 작성
+            3, 6, 7
+        };
+
         private static ManualResetEvent allDone = new ManualResetEvent(false);
         private Thread runUpdate = new Thread(delegate() { while (true) { update(); } });
         private Thread runSkillUpdate = new Thread(delegate () { while (true) { Skill.update(); } });
