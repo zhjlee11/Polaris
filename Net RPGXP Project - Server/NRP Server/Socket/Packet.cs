@@ -419,14 +419,17 @@ namespace NRP_Server
                         if (ds.Rows.Count == 1)
                         {
                             DataRow rs = ds.Rows[0];
-                            if (ToInt(rs["online"]) != 1 && !UserData.Users.ContainsKey(clientData))
+                            if (ToInt(rs["ban"]) > 0) {
+                                clientData.SendPacket(Dialog(0, "로그인 실패", rs["ban"].ToString() + "시간 동안 정지된 계정입니다."));
+                            }
+                            else if (ToInt(rs["online"]) != 1 && !UserData.Users.ContainsKey(clientData))
                             {
                                 u = new UserData(clientData);
                                 u.loadData(rs);
                                 UserData.Users.Add(clientData, u);
 
                                 
-
+                                
                                 // 온라인으로 변경
                                 Mysql.Query($"UPDATE user_information SET online = '1' WHERE no = '{u.no}'");
                                 clientData.SendPacket(Login(u));
@@ -539,7 +542,17 @@ namespace NRP_Server
                         text = recv["text"].ToString();
                         if (UserData.Users[clientData].character != null)
                             if (!Chat.Command(clientData, text))
-                                UserData.Users[clientData].character.fieldData.AllSendPacket(UserChat(text, name));
+                            {
+                                DataTable ds2 = Mysql.Query($"SELECT * FROM user_character WHERE no = '{UserData.Users[clientData].character.no}'");
+                                if (ToInt(Mysql.Query($"SELECT * FROM user_information WHERE no = '{ds2.Rows[0]["user_no"]}'").Rows[0]["mute"]) >= 1)
+                                {
+                                    clientData.SendPacket(Notice(255, 0, 0, Mysql.Query($"SELECT * FROM user_information WHERE no = '{ds2.Rows[0]["user_no"]}'").Rows[0]["mute"].ToString() + "시간동안 채팅이 정지되었습니다."));
+                                }
+                                else
+                                {
+                                    UserData.Users[clientData].character.fieldData.AllSendPacket(UserChat(text, name));
+                                }
+                            }
                         break;
 
 

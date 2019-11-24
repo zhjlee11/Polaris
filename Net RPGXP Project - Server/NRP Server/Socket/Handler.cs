@@ -8,6 +8,8 @@ using System.Net;
 using System.Collections;
 using System.Threading;
 using NRP_Server.Storage;
+using System.Data;
+using System.Globalization;
 
 namespace NRP_Server
 {
@@ -19,6 +21,9 @@ namespace NRP_Server
 
     class Handler
     {
+        static DateTime dateTime = DateTime.MinValue;
+        static int ticks = 0;
+        static int already = 0;
         private readonly object receiveSyncRoot = new object();
 
         private static ManualResetEvent allDone = new ManualResetEvent(false);
@@ -162,6 +167,30 @@ namespace NRP_Server
         {
             foreach (Map map in Map.Maps.Values)
                 map.update();
+
+            if (ticks == 10)
+            {
+                try
+                {
+                    using (var response = WebRequest.Create("http://www.google.com").GetResponse())
+                        dateTime = DateTime.ParseExact(response.Headers["date"], "ddd, dd MMM yyyy HH:mm:ss 'GMT'", CultureInfo.InvariantCulture.DateTimeFormat, DateTimeStyles.AssumeUniversal);
+                }
+                catch (Exception e) { dateTime = DateTime.Now; }                    
+                //매 시간 실행 내용
+                if (dateTime.Minute == 0 && dateTime.Millisecond == 0)
+                {
+                    if (already == 0)
+                    {
+                        Mysql.Query($"UPDATE user_information SET ban = ban - 1 WHERE ban > 0");
+                        Mysql.Query($"UPDATE user_information SET mute = mute - 1 WHERE mute > 0");
+                        already = 1;
+                    }
+                }
+                else { already = 0; }
+                ticks = 0;
+            }
+            else { ticks += 1; }
+
 
             Thread.Sleep(Config.WAIT_TIME);
         }

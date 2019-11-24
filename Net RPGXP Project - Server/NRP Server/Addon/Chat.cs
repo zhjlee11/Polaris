@@ -132,7 +132,8 @@ namespace NRP_Server
                     clientData.SendPacket(Packet.UserChat("\\C[50,250,50][관리] 유저가 접속중이 아닙니다."));
                     return true;
                 }
-            
+
+
 
              return false;
         }
