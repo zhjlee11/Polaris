@@ -109,6 +109,12 @@ namespace NRP_Server
             return Command.rand.Next(1, 1000) < per;
         }
 
+        public void SetMaxHp(int num) { maxhp = num; }
+        public void SetMaxMp(int num) { maxmp = num; }
+        public void SetStr(int num) { str = num; }
+        public void SetDex(int num) { dex = num; }
+        public void SetInt(int num) { Int = num; }
+        public void SetLuk(int num) { luk = num; }
 
 
         public void mobskilluse(int skillno) {

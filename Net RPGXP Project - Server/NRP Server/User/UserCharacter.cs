@@ -767,5 +767,12 @@ namespace NRP_Server
             userData.clientData.SendPacket(Packet.DeleteCharacter(this));
             userData.clientData.SendPacket(Packet.CharacterCreate(this));
         }
+
+        public void ReloadField() { 
+            fieldData.loadUser(this);
+            fieldData.loadNPC(this);
+            fieldData.loadEnemy(this);
+            fieldData.loadDropItem(this);
+        }
     }
 }

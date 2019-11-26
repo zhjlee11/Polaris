@@ -15,14 +15,14 @@ namespace NRP_Server
         public int level { get; protected set; }
         public int guild { get; protected set; }
         public int job { get; protected set; }
-        virtual public int maxhp { get;  set; }
-        virtual public int maxmp { get;  set; }
+        virtual public int maxhp { get; protected set; }
+        virtual public int maxmp { get; protected set; }
         virtual public int hp { get; set; }
         virtual public int mp { get; set; }
-        virtual public int str { get; set; }
-        virtual public int dex { get; set; }
-        virtual public int Int { get; set; }
-        virtual public int luk { get; set; }
+        virtual public int str { get; protected set; }
+        virtual public int dex { get; protected set; }
+        virtual public int Int { get; protected set; }
+        virtual public int luk { get; protected set; }
         public int pdef { get; protected set; }
         public int mdef { get; protected set; }
         public int point { get; protected set; }

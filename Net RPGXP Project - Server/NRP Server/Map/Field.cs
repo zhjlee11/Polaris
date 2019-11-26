@@ -215,6 +215,14 @@ namespace NRP_Server
             AllSendPacket(Packet.DropItemDelete(index));
         }
 
+        public void deleteDropItems()
+        {
+            foreach (int index in new Dictionary<int, DropItem>(DropItems).Keys) {
+                DropItems.Remove(index);
+                AllSendPacket(Packet.DropItemDelete(index));
+            }
+        }
+
         public bool isalldead() {
             foreach (Enemy ei in Enemies) {
                 if (!ei.IsDead) { return false; }
@@ -307,7 +315,7 @@ namespace NRP_Server
 
             //(자연수) 초일때만, 즉 1초마다 실행
             if (time%10 == 0) {
-                if (mapid == 8 || mapid == 9 || mapid == 10) { return; }
+                if (Rogue.stagetype.Values.ToList().Contains(mapid)) { return; }
                 if (fieldclimate != null) {
                     int sec = Convert.ToInt32(time / 10);
                     //이미 날씨가 있어서, 그에 대한 효과 실행

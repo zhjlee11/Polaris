@@ -17,7 +17,7 @@ namespace NRP_Server
         }
         #endregion
         // Static Variables
-        public const int MAP_SIZE = 10;
+        public const int MAP_SIZE = 21;
         public static Dictionary<int, Map> Maps = new Dictionary<int, Map>();
 
         public static void loadData()
