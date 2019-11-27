@@ -155,18 +155,46 @@ namespace NRP_Server
         }
 
         public void SetupStage() {
-            NowStage.addEnemy(37, 13, 20);
+            Random r = new Random();
             switch (NowStage.mapid) { //맵 id로 구분
                 case 8:
-                    /* [몬스터 배치 Example]
-                    
-                    NowStage.addEnemy(37, 20, 5);
-                    NowStage.addEnemy(37, 16, 17);
-                    NowStage.addEnemy(37, 20, 11);*/
+                    //47~81번 : 룬 일반 몬스터
+                    NowStage.addEnemy(r.Next(47, 82), 23, 15);
+                    NowStage.addEnemy(r.Next(47, 82), 2, 14);
+                    NowStage.addEnemy(r.Next(47, 82), 9, 7);
+                    NowStage.addEnemy(r.Next(47, 82), 22, 7);
                     break;
-                
+
+                case 9:
+                    NowStage.addEnemy(r.Next(47, 82), 9, 18);
+                    NowStage.addEnemy(r.Next(47, 82), 19, 6);
+                    NowStage.addEnemy(r.Next(47, 82), 22, 13);
+                    NowStage.addEnemy(r.Next(47, 82), 5, 9);
+                    break;
+
+                case 12:
+                    NowStage.addEnemy(r.Next(47, 82), 10, 18);
+                    NowStage.addEnemy(r.Next(47, 82), 4, 6);
+                    NowStage.addEnemy(r.Next(47, 82), 25, 7);
+                    NowStage.addEnemy(r.Next(47, 82), 24, 17);
+                    NowStage.addEnemy(r.Next(47, 82), 11, 20);
+                    break;
+
+                case 16:
+                    NowStage.addEnemy(r.Next(47, 82), 4,8);
+                    NowStage.addEnemy(r.Next(47, 82), 4,17);
+                    NowStage.addEnemy(r.Next(47, 82), 22,17);
+                    NowStage.addEnemy(r.Next(47, 82), 22,8);
+                    break;
+
+                case 17:
+                    NowStage.addEnemy(r.Next(47, 82), 4, 18);
+                    NowStage.addEnemy(r.Next(47, 82), 23, 12);
+                    NowStage.addEnemy(r.Next(47, 82), 9,3);
+                    NowStage.addEnemy(r.Next(47, 82), 25,22);
+                    break;
+
             }
-            Random r = new Random();
             if (NowStage.Enemies.Count != 0) {
                 foreach (Enemy e in NowStage.Enemies)
                 {
@@ -179,12 +207,12 @@ namespace NRP_Server
                         지능 스텟 = 반올림[기본 지능 스텟 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)}]
                      */
 
-                    e.SetMaxHp(e.maxhp + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble() + 0.1, 0, MidpointRounding.AwayFromZero)));
-                    e.SetMaxMp(e.maxmp + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble() + 0.1, 0, MidpointRounding.AwayFromZero)));
-                    e.SetStr(e.str + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble(), 0, MidpointRounding.AwayFromZero)));
-                    e.SetDex(e.dex + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble(), 0, MidpointRounding.AwayFromZero)));
-                    e.SetInt(e.Int + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble(), 0, MidpointRounding.AwayFromZero)));
-                    e.SetLuk(e.luk + stagenum ^ Convert.ToInt32(Math.Round(1.8 + r.NextDouble(), 0, MidpointRounding.AwayFromZero)));
+                    e.SetMaxHp(Convert.ToInt32(Math.Round(e.maxhp * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble() + 0.1)), 0, MidpointRounding.AwayFromZero)));
+                    e.SetMaxMp(Convert.ToInt32(Math.Round(e.maxmp * stagenum * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble() + 0.1)), 0, MidpointRounding.AwayFromZero)));
+                    e.SetStr(Convert.ToInt32(Math.Round(e.str * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
+                    e.SetDex(Convert.ToInt32(Math.Round(e.dex * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
+                    e.SetInt(Convert.ToInt32(Math.Round(e.Int * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
+                    e.SetLuk(Convert.ToInt32(Math.Round(e.luk * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
                     e.rebirth_time = -1;
                 }
             }

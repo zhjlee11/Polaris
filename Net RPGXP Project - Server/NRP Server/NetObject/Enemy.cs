@@ -133,14 +133,7 @@ namespace NRP_Server
                     if (fieldD[no].hp <= 0) { continue; }
                     if (this.IsDead) { continue; }
                     if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]))
-                    {
-                        fieldD[no].userData.clientData.SendPacket(Packet.UserChat("얼음이여, 저들을 영원한 추위속에 가두소서!", "????"));
-                        fieldD[no].userData.clientData.SendPacket(Packet.UserWinEffect());
-                        if ( Command.rand.Next(1, 10) >= 2) {
-                            fieldD[no].canctrl += 10;
-                        }
-                        
-                        Console.WriteLine(fieldD[no].canctrl);
+                    {                       
                         fieldD[no].animation(skilldata.target_animation);
                         fieldD[no].damage(damage.ToString(), false);
                         continue;

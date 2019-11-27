@@ -18,6 +18,7 @@ namespace NRP_Server
         {
             Command admin = new Command("/admin");
             Command test = new Command("/test");
+            Command killall = new Command("/killall");
             // /give user_name item_no item_num
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
@@ -64,6 +65,16 @@ namespace NRP_Server
                     rogue.EnterNew();
                     return true;
                 }
+
+            if (killall.isMatch(msg)) {
+                if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name)) {
+                    foreach (Enemy e in UserData.Users[clientData].character.fieldData.Enemies) {
+                        if (UserData.Users[clientData].character == null) { continue; }
+                        e.dead(UserData.Users[clientData].character);
+                    }
+                    return true;
+                }
+            }
 
             if (notice.isMatch(msg))
                 if (UserData.Users[clientData].admin)
