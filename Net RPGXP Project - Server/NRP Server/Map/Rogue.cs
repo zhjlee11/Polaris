@@ -180,6 +180,10 @@ namespace NRP_Server
                     NowStage.addEnemy(r.Next(47, 82), 11, 20);
                     break;
 
+                case 15:
+                    NowStage.addEnemy(r.Next(82, 89), 13, 11);
+                    break;
+
                 case 16:
                     NowStage.addEnemy(r.Next(47, 82), 4,8);
                     NowStage.addEnemy(r.Next(47, 82), 4,17);

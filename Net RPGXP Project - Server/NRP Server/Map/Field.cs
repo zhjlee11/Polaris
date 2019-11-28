@@ -332,9 +332,9 @@ namespace NRP_Server
                     }
                     else { }
 
-                    if (fieldclimate.duration - 1 <= 0) { 
+                    if (fieldclimate.duration - 1 <= 0) {
+                        climate.climates.Remove(fieldclimate.no); 
                         fieldclimate = null;
-                        climate.climates.Remove(fieldclimate.no);
                         foreach (UserCharacter u in Users.Values)
                         {
                             u.userData.clientData.SendPacket(Packet.Notice(0, 255, 55, "하늘이 맑아집니다."));
