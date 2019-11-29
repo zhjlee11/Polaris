@@ -22,13 +22,16 @@ namespace NRP_Server
         {
             int new_x, new_y, dir;
             dir = attacker.direction;
-            switch (type) 
+            switch (type)
             {
                 // 범위
                 case 0:
                     new_x = Math.Abs(attacker.x - defender.x);
                     new_y = Math.Abs(attacker.y - defender.y);
-                    if (new_x + new_y <= range) { return true; }
+                    if (new_x + new_y <= range) {
+                        foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
+                        return true;
+                    }
                     break;
 
                 // 직선
@@ -37,7 +40,10 @@ namespace NRP_Server
                     new_y = dir == 2 ? 1 : dir == 8 ? -1 : 0;
                     for (int i = 0; i <= range; i++)
                         if (defender.x == attacker.x + new_x * i && defender.y == attacker.y + new_y * i)
+                        {
+                            foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
                             return true;
+                        }
                     break;
 
                 // 삼각
@@ -49,11 +55,16 @@ namespace NRP_Server
                     if (dir == 2)
                         new_y *= -1;
                     if (dir == 4 || dir == 6)
-                        if (new_x > 0 && Math.Abs(new_x) + Math.Abs(new_y) <= range)
+                        if (new_x > 0 && Math.Abs(new_x) + Math.Abs(new_y) <= range) {
+                            foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
                             return true;
+                        }
                     if (dir == 2 || dir == 8)
                         if (new_y > 0 && Math.Abs(new_x) + Math.Abs(new_y) <= range)
+                        {
+                            foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
                             return true;
+                        }
                     break;
 
                 // 분사
@@ -67,18 +78,23 @@ namespace NRP_Server
                     if (dir == 8)
                         new_y *= -1;
                     if (dir == 4 || dir == 6)
-                        if (new_x > 0 && (Math.Abs(new_x) + Math.Abs(new_y)) <= range)
-                            return true;
+                        if (new_x > 0 && (Math.Abs(new_x) + Math.Abs(new_y)) <= range) {
+                            foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
+                            return true; 
+                        }
                     if (dir == 2 || dir == 8)
                         if (new_y > 0 && (Math.Abs(new_x) + Math.Abs(new_y)) <= range)
+                        {
+                            foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } }
                             return true;
+                        }
                     break;
 
                 // 사각
                 case 4:
                     new_x = Math.Abs(attacker.x - defender.x);
                     new_y = Math.Abs(attacker.y - defender.y);
-                    if (new_x <= range && new_y <= range) { return true; }
+                    if (new_x <= range && new_y <= range) { foreach (UserData ud in UserData.Users.Values) { if (ud.no == defender.no && ud.character.name == defender.name) { ud.clientData.SendPacket(Packet.Notice(255, 0, 0, "몬스터의 스킬 범위 안에 들어와 있습니다!/n반대 방향으로 물러나세요!")); } } return true; }
                     break;
             }
             return false;
@@ -101,56 +117,18 @@ namespace NRP_Server
             }
         }
 
+
+
         public static void missileprojectile(UserCharacter u, UserSkill skill)
         {
-
-            int startx;
-            int starty;
-
-            int index;
-
             u.animation(skill.skillData.use_animation);
-
-                /*if (u.direction == 8)
-                {
-                    Console.WriteLine("북");
-                    startx = u.x;
-                    starty = u.y + 1;
-                }
-                else if (u.direction == 4)
-                {
-                    Console.WriteLine("서");
-                    startx = u.x - 1;
-                    starty = u.y;
-                }
-                else if (u.direction == 6)
-                {
-                    Console.WriteLine("동");
-                    startx = u.x + 1;
-                    starty = u.y;
-                }
-                else if (u.direction == 2)
-                {
-                    Console.WriteLine("남");
-                    startx = u.x;
-                    starty = u.y - 1;
-                }
-                else
-                {
-                    return;
-                }*/
-            index = u.fieldData.addEnemy(skill.skillData.target_animation, u.x, u.y);
-            Console.WriteLine("몬스터 추가");
+            int index = u.fieldData.addEnemy(skill.skillData.target_animation, u.x, u.y);
             (u.fieldData.Enemies[index] as Enemy).turn(u.direction);
-            Console.WriteLine("방향 바꾸기");
-            //Console.WriteLine("pattern1 =  " + (u.fieldData.Enemies[index] as Enemy).pattern);
             (u.fieldData.Enemies[index] as Enemy).creator = u;
             (u.fieldData.Enemies[index] as Enemy).pattern = 9;
             (u.fieldData.Enemies[index] as Enemy).setcreator(u);
-            //Console.WriteLine("pattern2 =  " + (u.fieldData.Enemies[index] as Enemy).pattern);
-
         }
     }
-    }
+}
 
 

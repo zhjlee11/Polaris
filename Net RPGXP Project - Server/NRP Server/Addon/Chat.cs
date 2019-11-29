@@ -18,10 +18,15 @@ namespace NRP_Server
         {
             Command admin = new Command("/admin");
             Command test = new Command("/test");
-            Command killall = new Command("/killall");
+            //이너월드 명령어
+            Command killall = new Command("/ka");
+            Command nodeath = new Command("/nodeath");
+            Command setnextroom = new Command("/snr ([0-9]+)");
+            Command InnerReload = new Command("/iwr");
             // /give user_name item_no item_num
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
+            
 
             Command hpadd = new Command("/hpset ([0-9]+)");
             Command mpadd = new Command("/mpset ([0-9]+)");
@@ -66,6 +71,14 @@ namespace NRP_Server
                     return true;
                 }
 
+            if (nodeath.isMatch(msg))
+                if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name))
+                {
+                    if (UserData.Users[clientData].character.NoDamage == 0) { UserData.Users[clientData].character.NoDamage = 1; clientData.SendPacket(Packet.Notice(0, 255, 0, "무적 모드가 활성화 되었습니다.")); }
+                    else if (UserData.Users[clientData].character.NoDamage == 1) { UserData.Users[clientData].character.NoDamage = 0; clientData.SendPacket(Packet.Notice(255, 0, 0, "무적 모드가 비활성화 되었습니다.")); }
+                    return true;
+                }
+
             if (killall.isMatch(msg)) {
                 if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name)) {
                     foreach (Enemy e in UserData.Users[clientData].character.fieldData.Enemies) {
@@ -75,6 +88,40 @@ namespace NRP_Server
                     return true;
                 }
             }
+
+            if (setnextroom.isMatch(msg))
+                if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name))
+                {
+                    string[] data = setnextroom.MatchData(msg);
+
+                    if (UserData.Users[clientData].character.rogueno == -1)
+                    {
+                        clientData.SendPacket(Packet.Notice(255, 0, 0, "이너 월드에 들어가 있지 않습니다."));
+                        return true;
+                    }
+                    else {
+                        Rogue.rogues[UserData.Users[clientData].character.rogueno].setNext(Convert.ToInt32(data[1]));
+                        return true;
+                    }
+                }
+
+            if (InnerReload.isMatch(msg))
+                if (Packet.ADMIN.Contains(UserData.Users[clientData].character.name))
+                {
+
+                    if (UserData.Users[clientData].character.rogueno == -1)
+                    {
+                        clientData.SendPacket(Packet.Notice(255, 0, 0, "이너 월드에 들어가 있지 않습니다."));
+                        return true;
+                    }
+                    else
+                    {
+                        Rogue.rogues[UserData.Users[clientData].character.rogueno].SetupStage();
+                        UserData.Users[clientData].character.ReloadField();
+                        return true;
+                    }
+                }
+
 
             if (notice.isMatch(msg))
                 if (UserData.Users[clientData].admin)

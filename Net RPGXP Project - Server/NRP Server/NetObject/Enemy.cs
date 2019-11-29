@@ -85,6 +85,13 @@ namespace NRP_Server
             sight = ToInt(rs["sight"]);
             animation_id = ToInt(rs["animation_id"]);
             loadDropData();
+
+            if (no == 82) { skillList.Add(7, 80); }
+            else if (no == 84) { skillList.Add(9, 50); }
+            else if (no == 85) { skillList.Add(10, 50); }
+            else if (no == 86) { skillList.Add(11, 100); }
+            else if (no == 87) { skillList.Add(12, 70); }
+            else if (no == 88) { skillList.Add(13, 70); }
         }
 
         public void setcreator(UserCharacter chara)
@@ -126,7 +133,7 @@ namespace NRP_Server
             int damage = Convert.ToInt32(skilldata.power + (this.Int + Command.rand.Next(this.luk)) * skilldata.power_factor);
             this.animation(skilldata.use_animation);
             Dictionary<int, UserCharacter> fieldD = new Dictionary<int, UserCharacter>(this.fieldData.Users);
-            if (skillno == 5)
+            if (skillno == 5 || skillno == 7)
             {
                 foreach (int no in fieldD.Keys)
                 {
@@ -136,6 +143,79 @@ namespace NRP_Server
                     {                       
                         fieldD[no].animation(skilldata.target_animation);
                         fieldD[no].damage(damage.ToString(), false);
+                        continue;
+                    }
+                }
+            }
+            else if (skillno == 8)
+            {
+                foreach (int no in fieldD.Keys)
+                {
+                    if (fieldD[no].hp <= 0) { continue; }
+                    if (this.IsDead) { continue; }
+                    if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]))
+                    {
+                        fieldD[no].animation(skilldata.target_animation);
+                        fieldD[no].canctrl += skilldata.power;
+                        continue;
+                    }
+                }
+            }
+            else if (skillno == 10)
+            {
+                foreach (int no in fieldD.Keys)
+                {
+                    if (fieldD[no].hp <= 0) { continue; }
+                    if (this.IsDead) { continue; }
+                    if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]))
+                    {
+                        fieldD[no].animation(skilldata.target_animation);
+                        fieldD[no].damage((fieldD[no].maxhp/5).ToString(), false);
+                        continue;
+                    }
+                }
+            }
+            else if (skillno == 11)
+            {
+                foreach (int no in fieldD.Keys)
+                {
+                    if (fieldD[no].hp <= 0) { continue; }
+                    if (this.IsDead) { continue; }
+                    if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]) && !fieldD[no].passivelist.ContainsKey("독"))
+                    {
+                        fieldD[no].animation(skilldata.target_animation);
+                        fieldD[no].addPassive("독", 20);
+                        continue;
+                    }
+                }
+            }
+            else if (skillno == 12)
+            {
+                
+                foreach (int no in fieldD.Keys)
+                {
+                    if (fieldD[no].hp <= 0) { continue; }
+                    if (this.IsDead) { continue; }
+                    if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]))
+                    {
+                        fieldD[no].animation(skilldata.target_animation);
+                        fieldD[no].damage((fieldD[no].maxhp / new Random().Next(2, 7)).ToString(), false);
+                        continue;
+                    }
+                }
+            }
+            else if (skillno == 13)
+            {
+                foreach (int no in fieldD.Keys)
+                {
+                    if (fieldD[no].hp <= 0) { continue; }
+                    if (this.IsDead) { continue; }
+                    if (SkillFunction.IsRange(skilldata.range_type, skilldata.range, this, fieldD[no]))
+                    {
+                        fieldD[no].animation(skilldata.target_animation);
+                        fieldD[no].damage((fieldD[no].maxhp / 4).ToString(), false);
+                        if (fieldD[no].soul - 1 > 0) { fieldD[no].soul -= 1; }
+                        fieldD[no].userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[fieldD[no].rogueno]));
                         continue;
                     }
                 }
@@ -265,7 +345,8 @@ namespace NRP_Server
         {
 
             if (dmg != "Miss")
-                hp -= pattern==40 ? 1 : Convert.ToInt32(dmg);
+                if (hp - Convert.ToInt32(dmg) >= maxhp) { hp = maxhp; }
+                else { hp -= pattern == 40 ? 1 : Convert.ToInt32(dmg); }
             fieldData.AllSendPacket(Packet.EnemyDamage(this, dmg, dmg == "Miss" ? false : critical));
             if (hp <= 0)
                 dead(attacker);
@@ -318,6 +399,7 @@ namespace NRP_Server
 
         private void attack()
         {
+            string dmg = "";
             if (delay_count > 0) { delay_count--; }
             // 타겟 검색 및 데미지 처리 부분
             if (target != null)
@@ -331,14 +413,32 @@ namespace NRP_Server
                     if (new_x == target.x && new_y == target.y)
                     {
                         bool critical = Command.rand.Next(1000) < luk;
-                        string dmg = Damage.atk(this, target, critical);
+                        dmg = Damage.atk(this, target, critical);
                         if (dmg == "Miss")
                             critical = false;
                         target.animation(animation_id);
+                        if (no == 88)
+                        {
+                            if (new Random().Next(1, 1000) <= 120)
+                            {
+                                critical = true;
+                                direction = 10 - direction;
+                                x = target.x * 2 - x;
+                                y = target.y * 2 - y;
+                            }
+                        }
                         target.damage(dmg, critical);
                         delay_count = delay;
                     }
                 }
+                if (no == 83) {
+                    if (new Random().Next(1, 1000) <= 80) {
+                        damage((Convert.ToInt32(dmg) * (-1)).ToString(), false, this);
+                    }
+                }
+
+                
+
                 //주변의 캐릭터 검사해서 공격 줄 수 있는 함수 실행
                 foreach (int i in skillList.Keys)
                 {

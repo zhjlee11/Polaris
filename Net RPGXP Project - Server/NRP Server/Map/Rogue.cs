@@ -93,6 +93,11 @@ namespace NRP_Server
             player.ReloadField();
         }
 
+
+        public void setNext(int mapno) {
+            NextStage = Map.Maps[mapno].newFieldRO(player.no);
+        }
+
         public void GoNext() {
             if (PreviousStage != null) { 
                 PreviousStage.dispose(); 

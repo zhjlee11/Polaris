@@ -32,7 +32,9 @@ namespace NRP_Server
 
         public Dictionary<Item, UserItem> ownitems = new Dictionary<Item, UserItem>();
 
-        public int canctrl = 0;
+        public int canctrl { get; set; } = 0;
+
+        public int NoDamage { get; set; } = 0;
 
         public int gold { get; private set; }
         // 스탯 오버라이드
@@ -507,8 +509,13 @@ namespace NRP_Server
         // 전투 관련 함수
         public void damage(string dmg, bool critical)
         {
+            if (NoDamage == 1) { dmg = (ToInt(dmg)/Math.Abs(ToInt(dmg))).ToString(); }
+
             if (dmg != "Miss")
                 hp -= ToInt(dmg);
+
+            if (NoDamage == 1) { dmg = "1"; }
+
             if (hp > maxhp)
                 hp = maxhp;
 
