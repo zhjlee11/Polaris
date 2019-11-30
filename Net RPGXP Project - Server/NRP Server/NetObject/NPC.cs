@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace NRP_Server
 {
@@ -313,7 +314,8 @@ namespace NRP_Server
                     break;
 
                 case "STORE":
-                    index = Convert.ToInt32(cmd[1]);
+                    index = Convert.ToInt32(cmd[1]);                   
+                    
                     u.page = npcData.Stores[index].action;
                     Store.Show(u, npcData.Stores[index].storeData.no);
                     npcData.startEvent(u);

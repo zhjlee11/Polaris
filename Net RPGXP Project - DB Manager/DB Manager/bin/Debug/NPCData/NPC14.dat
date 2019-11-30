@@ -1,0 +1,6 @@
+ACTION=1,,MESSAGE:1
+MESSAGE=1,2[2,3],이너 월드에 온 것을 환영하네.\n자네의 최대 체력의 90%를 바치고,\n 모든 스텟을 3만큼 올릴 수 있다네.\n\n어때? 제단을 사용하겠는가?
+ACTION=2,네,FUNCTION:1
+FUNCTION=1,4,InsteadHpToStatus
+ACTION=3,아니요,END
+ACTION=4,,END

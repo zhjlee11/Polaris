@@ -338,13 +338,17 @@ namespace NRP_Server
                     case CHARACTER_STORE_BUY:
                         if (UserData.Users[clientData].character != null)
                         {
-                            Store.Buy(UserData.Users[clientData].character, ToInt(recv["store_no"]), ToInt(recv["no"]), ToInt(recv["num"]));
+                            if (UserData.Users[clientData].character.rogueno == -1) { Store.Buy(UserData.Users[clientData].character, ToInt(recv["store_no"]), ToInt(recv["no"]), ToInt(recv["num"])); }
+                            else {
+                                //돈 대신 영혼으로 아이템 구매
+                                Store.Buy(UserData.Users[clientData].character, ToInt(recv["store_no"]), ToInt(recv["no"]), ToInt(recv["num"]), true);
+                            }
                         }
                         break;
 
                     // 유저 아이템 판매
                     case CHARACTER_STORE_SELL:
-                        if (UserData.Users[clientData].character != null)
+                        if (UserData.Users[clientData].character != null && UserData.Users[clientData].character.rogueno == -1)
                         {
                             Item item;
                             if (ToInt(recv["type"]) == 0)
@@ -594,19 +598,17 @@ namespace NRP_Server
                         c = UserData.Users[clientData].character;
                         if (c == null) { return true; }
                         Dictionary<NRP_Server.Item, UserItem> cinventory = new Dictionary<Item, UserItem>(c.Inventory);
-                        if (c.rogueno == -1)
+
+                        foreach (UserItem ui in cinventory.Values)
                         {
-                            foreach (UserItem ui in cinventory.Values)
-                            {
-                                c.trashItem(ui.itemData, ui.number, c.oldx, c.oldy, c.oldField);
-                            }
+                            c.trashItem(ui.itemData, ui.number, c.oldx, c.oldy, c.oldField);
                         }
-                        else { 
-                            Rogue.rogues.Remove(c.rogueno);
-                            c.rogueno = -1;
-                            c.gainItem(NRP_Server.Item.Items[Rogue.souldid], c.soul);
-                            c.soul = 0;
-                        }
+
+                        Rogue.rogues.Remove(c.rogueno);
+                        c.rogueno = -1;
+                        //c.gainItem(NRP_Server.Item.Items[Rogue.souldid], c.soul);
+                        c.soul = 0;
+                        
                             
                         c.hp = c.maxhp;
                         
@@ -614,7 +616,7 @@ namespace NRP_Server
                            
                         foreach (UserItem ui in c.ownitems.Values)
                         {
-                                c.gainItem(ui.itemData, ui.number);
+                            c.gainItem(ui.itemData, ui.number);
                         }
 
 
@@ -624,9 +626,10 @@ namespace NRP_Server
                         c.userData.clientData.SendPacket(Packet.UserChat("\\C[250,50,50]당신은 죽었습니다!"));
 
                         foreach (UserCharacter uca in c.fieldData.Users.Values) {
+                            if (uca == c) { continue; }
                             uca.ReloadUser(c);
                         }
-                        c.ReloadUser();
+                        
                         break;
 
                     //씨앗

@@ -241,11 +241,7 @@ namespace NRP_Server
             Users.Add(u.no, u);
             AllSendPacket(Packet.CharacterCreate(u));
             u.moveto(_x, _y, u.direction);
-            loadUser(u);
-            loadNPC(u);
-            loadEnemy(u);
-            loadDropItem(u);
-
+            u.ReloadFieldf();
 
             return true;
         }
@@ -295,17 +291,14 @@ namespace NRP_Server
             
 
             if (Users.Count == 0) { return; }
-            ArrayList enemylist = Enemies;
+            ArrayList enemylist = new ArrayList(Enemies);
             foreach (Enemy obj in enemylist) { obj.update(); }
             ArrayList Userlist = new ArrayList(Users.Keys);
             try { foreach (int i in Userlist) { Users[i].update(); } }
             catch (Exception e) { Console.WriteLine(e); }
             foreach (UserCharacter ui in Users.Values) {
                 if (ui.EverReload == 0) {
-                    loadUser(ui);
-                    loadNPC(ui);
-                    loadEnemy(ui);
-                    loadDropItem(ui);
+                    ui.ReloadField();
                     ui.EverReload = 1;
                 }
             }
@@ -313,8 +306,29 @@ namespace NRP_Server
 
             time += 1;
 
+            
+
             //(자연수) 초일때만, 즉 1초마다 실행
             if (time%10 == 0) {
+                if (mapid == 12)
+                {
+                    foreach (UserCharacter ui in Users.Values)
+                    {
+                        if (ui.hp <= 0) { continue; }
+                        ui.damage("10", false);
+                    }
+                    foreach (Enemy e in enemylist)
+                    {
+                        if (e.hp - 1 == 0 || e.IsDead) { continue; }
+                        if (e.hp + 5 > e.maxhp) { e.hp = e.maxhp; AllSendPacket(Packet.EnemyDamage(e, "5", "5" == "Miss" ? false : false)); }
+                        else
+                        {
+                            e.hp += 5;
+                            AllSendPacket(Packet.EnemyDamage(e, "5", "5" == "Miss" ? false : false));
+                        }
+                        
+                    }
+                }
                 if (Rogue.stagetype.Values.ToList().Contains(mapid)) { return; }
                 if (fieldclimate != null) {
                     int sec = Convert.ToInt32(time / 10);

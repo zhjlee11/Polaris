@@ -509,7 +509,7 @@ namespace NRP_Server
         // 전투 관련 함수
         public void damage(string dmg, bool critical)
         {
-            if (NoDamage == 1) { dmg = (ToInt(dmg)/Math.Abs(ToInt(dmg))).ToString(); }
+            if (NoDamage == 1) { dmg = "1"; }
 
             if (dmg != "Miss")
                 hp -= ToInt(dmg);
@@ -520,19 +520,21 @@ namespace NRP_Server
                 hp = maxhp;
 
             // 죽었다면?
-            if (hp <= 0)
+            if (hp <= 0 && rogueno == -1)
             {
-                userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[rogueno], -1));
+
 
                 oldx = x;
                 oldy = y;
                 oldField = fieldData;
 
                 rogueno = -1;
-                
+
 
                 hp = 0;
                 userData.clientData.SendPacket(Packet.CharacterStatusUpdate(this));
+                if (rogueno >= 0) { userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[rogueno], -1)); }
+
                 //seed 추출
                 int oldseed = this.fieldData.seed;
                 Field oldfield = this.fieldData;
@@ -547,12 +549,23 @@ namespace NRP_Server
                         removeItem(ui.itemData);
                     }
                     catch (Exception e) { }
-                    
+
                 }
                 fieldData = null;
 
                 //UI 귀속 설정 UI On
                 this.userData.clientData.SendPacket(Packet.SetMakeOwn());
+            }
+            else if (hp <= 0 && rogueno != -1) {
+                if (rogueno >= 0) { userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[rogueno], -1)); }
+                rogueno = -1;
+
+                hp = maxhp;
+                dmg = (-maxhp).ToString();
+                fieldData.leave(no);
+                Map.Maps[1].Fields[0].join(this, 11, 9);
+                userData.clientData.SendPacket(Packet.UserChat("\\C[250,50,50]당신은 죽었습니다!"));
+                userData.clientData.SendPacket(Packet.CharacterStatusUpdate(this));
             }
             else { fieldData.AllSendPacket(Packet.CharacterDamage(this, dmg, critical)); }
             
@@ -773,7 +786,16 @@ namespace NRP_Server
         {
             userData.clientData.SendPacket(Packet.DeleteCharacter(this));
             userData.clientData.SendPacket(Packet.CharacterCreate(this));
+
         }
+
+        public void ReloadFieldf()
+        {
+            fieldData.loadNPC(this);
+            fieldData.loadEnemy(this);
+            fieldData.loadDropItem(this);
+        }
+
 
         public void ReloadField() { 
             fieldData.loadUser(this);

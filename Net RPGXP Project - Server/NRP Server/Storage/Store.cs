@@ -38,29 +38,54 @@ namespace NRP_Server
                 u.userData.clientData.SendPacket(Packet.StoreItem(storeData, item));
         }
 
-        public static void Buy(UserCharacter u, int store_no, int item_no, int number)
+        public static void Buy(UserCharacter u, int store_no, int item_no, int number, bool issoul = false)
         {
             if (List.ContainsKey(store_no))
-            {
-                Store storeData = List[store_no];
-                if (number <= 0) { u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "구매 개수를 정확히 입력해주세요.")); return; }
-                if (storeData.Items[item_no].number >= number || storeData.Items[item_no].number == -1)
+            {   if (issoul == false)
                 {
-                    int gold = storeData.Items[item_no].price * number;
-                    if (u.gold >= gold)
+                    Store storeData = List[store_no];
+                    if (number <= 0) { u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "구매 개수를 정확히 입력해주세요.")); return; }
+                    if (storeData.Items[item_no].number >= number || storeData.Items[item_no].number == -1)
                     {
-                        if (storeData.Items[item_no].number != -1)
-                            storeData.Items[item_no].number -= number;
-                        u.loseGold(gold);
-                        Command.gainItem(u, storeData.Items[item_no].item_no, number);
-                        u.userData.clientData.SendPacket(Packet.StoreItem(storeData, storeData.Items[item_no]));
-                        u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 완료", $"{Item.Items[storeData.Items[item_no].item_no].name} 아이템을 {number}개 구매했습니다."));
+                        int gold = storeData.Items[item_no].price * number;
+                        if (u.gold >= gold)
+                        {
+                            if (storeData.Items[item_no].number != -1)
+                                storeData.Items[item_no].number -= number;
+                            u.loseGold(gold);
+                            Command.gainItem(u, storeData.Items[item_no].item_no, number);
+                            u.userData.clientData.SendPacket(Packet.StoreItem(storeData, storeData.Items[item_no]));
+                            u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 완료", $"{Item.Items[storeData.Items[item_no].item_no].name} 아이템을 {number}개 구매했습니다."));
+                        }
+                        else
+                            u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "보유 금액이 부족합니다."));
                     }
                     else
-                        u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "보유 금액이 부족합니다."));
+                        u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "상점의 아이템 개수가 부족합니다."));
                 }
-                else
-                    u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "상점의 아이템 개수가 부족합니다."));
+                else if(issoul == true && u.rogueno != -1) {
+                    Store storeData = List[store_no];
+                    if (number <= 0) { u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "구매 개수를 정확히 입력해주세요.")); return; }
+                    if (storeData.Items[item_no].number >= number || storeData.Items[item_no].number == -1)
+                    {
+                        int gold = storeData.Items[item_no].price * number;
+                        if (u.soul >= gold)
+                        {
+                            if (storeData.Items[item_no].number != -1)
+                                storeData.Items[item_no].number -= number;
+                            u.soul -= gold;
+                            u.userData.clientData.SendPacket(Packet.CharacterStatusUpdate(u));
+                            u.userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[u.rogueno]));
+                            Command.gainItem(u, storeData.Items[item_no].item_no, number);
+                            u.userData.clientData.SendPacket(Packet.StoreItem(storeData, storeData.Items[item_no]));
+                            u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 완료", $"{Item.Items[storeData.Items[item_no].item_no].name} 아이템을 {number}개 구매했습니다."));
+                        }
+                        else
+                            u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "보유 영혼이 부족합니다."));
+                    }
+                    else
+                        u.userData.clientData.SendPacket(Packet.Dialog(0, "구매 불가", "상점의 아이템 개수가 부족합니다."));
+                }
             }
         }
 

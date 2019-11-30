@@ -14,7 +14,7 @@ namespace NRP_Server
     {
         public static Dictionary<int, Rogue> rogues = new Dictionary<int, Rogue>();
         public static Dictionary<int, int> stagetype = new Dictionary<int, int>();
-        public static int souldid = -1; //영혼 아이템 코드
+        public static int souldid = 77; //영혼 아이템 코드
 
         public int no { get; private set; }
         public UserCharacter player { get; set; }
@@ -40,21 +40,22 @@ namespace NRP_Server
             player.fieldData.leave(player.no);
             Random r = new Random();
             int rnum, rrnum;
+            Console.WriteLine("맵 검색 중");
             while (true)
             {
                 rnum = r.Next(0, stagetype.Count());
-                if (rnum == 11)
+                Console.WriteLine(rnum);
+                if (stagetype[rnum] == 19)
                 {
                     if (player.soul >= 20) { break; }
                     else { continue; }
                 }
-                else if (rnum == 12)
+                else if (stagetype[rnum] == 20)
                 {
-                    if (player.maxhp / 10 >= player.hp) { break; }
+                    if (player.maxhp / 10 >= player.hp) {  break; }
                     else { continue; }
-
                 }
-                else if (rnum == 13)
+                else if (stagetype[rnum] == 21)
                 {
                     if (player.soul >= 100) { break; }
                     else { continue; }
@@ -64,33 +65,41 @@ namespace NRP_Server
             while (true)
             {
                 rrnum = r.Next(0, stagetype.Count());
+                Console.WriteLine(rrnum);
                 if (rnum == rrnum) { continue; }
-                if (rrnum == 11)
+                if (stagetype[rrnum] == 19)
                 {
                     if (player.soul >= 20) { break; }
                     else { continue; }
                 }
-                else if (rrnum == 12)
+                else if (stagetype[rrnum] == 20)
                 {
                     if (player.maxhp / 10 >= player.hp) { break; }
                     else { continue; }
 
                 }
-                else if (rrnum == 13)
+                else if (stagetype[rrnum] == 21)
                 {
                     if (player.soul >= 100) { break; }
                     else { continue; }
                 }
                 break;
             }
+            
             this.NowStage = Map.Maps[stagetype[rnum]].newFieldRO(player.no) as Field;
             this.NextStage = Map.Maps[stagetype[rrnum]].newFieldRO(player.no) as Field;
             NowStage.join(player, (Map.Maps[NowStage.mapid].width - 1) / 2, Map.Maps[NowStage.mapid].height - 1);
             player.ReloadUser();
+            
             player.userData.clientData.SendPacket(Packet.RogueReload(this));
             SetupStage();
             player.userData.clientData.SendPacket(Packet.Notice(0, 255, 0, "무질서의 차원, 이너 월드에 들어 왔습니다."));
             player.ReloadField();
+            if (player.fieldData.mapid == 13) { 
+                player.animation(17);
+                player.userData.clientData.SendPacket(Packet.Notice(0, 255, 0, "체력이 회복되었습니다!"));
+                player.damage((player.maxhp/10*4*(-1)).ToString(), false);
+            }
         }
 
 
@@ -113,18 +122,18 @@ namespace NRP_Server
             while (true) {
                 rnum = r.Next(0, stagetype.Count());
                 if (NowStage.mapid == stagetype[rnum]) { continue; }
-                if (rnum == 11)
+                if (stagetype[rnum] == 19)
                 {
-                    if (player.soul >= 20) { break; }
+                    if (player.soul >= 20) {  break; }
                     else { continue; }
                 }
-                else if (rnum == 12)
+                else if (stagetype[rnum] == 20)
                 {
                     if (player.maxhp / 10 >= player.hp) { break; }
                     else {continue;}
                 
                 }
-                else if (rnum == 13) {
+                else if (stagetype[rnum] == 21) {
                     if (player.soul >= 100) { break; }
                     else { continue; }
                 }
@@ -133,6 +142,12 @@ namespace NRP_Server
             NextStage = Map.Maps[stagetype[rnum]].newFieldRO(player.no);
             SetupStage();
             player.ReloadField();
+            if (player.fieldData.mapid == 13)
+            {
+                player.animation(17);
+                player.userData.clientData.SendPacket(Packet.Notice(0, 255, 0, "체력이 회복되었습니다!"));
+                player.damage((player.maxhp / 10 * 4 * (-1)).ToString(), false);
+            }
         }
 
         public void StageClear() {
@@ -144,19 +159,24 @@ namespace NRP_Server
 
         public static void LoadStage() {
             Rogue.stagetype.Add(0, 8);
-            Rogue.stagetype.Add(1, 9);
-            Rogue.stagetype.Add(2, 10);
-            Rogue.stagetype.Add(3, 11);
-            Rogue.stagetype.Add(4, 12);
-            Rogue.stagetype.Add(5, 13);
-            Rogue.stagetype.Add(6, 14);
-            Rogue.stagetype.Add(7, 15);
-            Rogue.stagetype.Add(8, 16);
-            Rogue.stagetype.Add(9, 17);
-            Rogue.stagetype.Add(10, 18);
-            Rogue.stagetype.Add(11, 19);
-            Rogue.stagetype.Add(12, 20);
-            Rogue.stagetype.Add(13, 21);
+            Rogue.stagetype.Add(1, 8);
+            Rogue.stagetype.Add(2, 8);
+            Rogue.stagetype.Add(3, 8);
+            Rogue.stagetype.Add(4, 9);
+            Rogue.stagetype.Add(5, 9);
+            Rogue.stagetype.Add(6, 9);
+            Rogue.stagetype.Add(7, 9);
+            Rogue.stagetype.Add(8, 10);
+            Rogue.stagetype.Add(9, 11);
+            Rogue.stagetype.Add(10, 12);
+            Rogue.stagetype.Add(11, 13);
+            Rogue.stagetype.Add(12, 14);
+            Rogue.stagetype.Add(13, 16);
+            Rogue.stagetype.Add(14, 17);
+            Rogue.stagetype.Add(15, 18);
+            Rogue.stagetype.Add(16, 19);
+            Rogue.stagetype.Add(17, 20);
+            Rogue.stagetype.Add(18, 21);
         }
 
         public void SetupStage() {
@@ -207,21 +227,12 @@ namespace NRP_Server
             if (NowStage.Enemies.Count != 0) {
                 foreach (Enemy e in NowStage.Enemies)
                 {
-                    /*  
-                        최대 체력 = 반올림[기본 최대 체력+ 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)+0.1}]
-                        최대 마나 = 반올림[기본 최대 마나 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)+0.1}]
-                        힘 스텟    = 반올림[기본 힘 스텟 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)}]
-                        민첩 스텟 = 반올림[기본 민첩 스텟 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)}]
-                        운 스텟    = 반올림[기본 운 스텟 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)}]
-                        지능 스텟 = 반올림[기본 지능 스텟 + 스테이지 ^ {1.8+(0과 1 사이의 랜덤 진분수 값)}]
-                     */
-
-                    e.SetMaxHp(Convert.ToInt32(Math.Round(e.maxhp * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble() + 0.1)), 0, MidpointRounding.AwayFromZero)));
-                    e.SetMaxMp(Convert.ToInt32(Math.Round(e.maxmp * stagenum * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble() + 0.1)), 0, MidpointRounding.AwayFromZero)));
-                    e.SetStr(Convert.ToInt32(Math.Round(e.str * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
-                    e.SetDex(Convert.ToInt32(Math.Round(e.dex * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
-                    e.SetInt(Convert.ToInt32(Math.Round(e.Int * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
-                    e.SetLuk(Convert.ToInt32(Math.Round(e.luk * Math.Sqrt(Math.Pow((double)stagenum, 1.8 + r.NextDouble())), 0, MidpointRounding.AwayFromZero)));
+                    e.SetMaxHp(Convert.ToInt32(Math.Round(e.maxhp + Math.Pow(stagenum, 1.5+ r.NextDouble()+0.1), 0, MidpointRounding.AwayFromZero)));
+                    e.SetMaxMp(Convert.ToInt32(Math.Round(e.maxmp + Math.Pow(stagenum, 1.5 + r.NextDouble() + 0.1), 0, MidpointRounding.AwayFromZero)));
+                    e.SetStr(Convert.ToInt32(Math.Round(e.str + Math.Pow(stagenum, 1.5 + r.NextDouble()), 0, MidpointRounding.AwayFromZero)));
+                    e.SetDex(Convert.ToInt32(Math.Round(e.dex + Math.Pow(stagenum, 1.5 + r.NextDouble()), 0, MidpointRounding.AwayFromZero)));
+                    e.SetInt(Convert.ToInt32(Math.Round(e.Int + Math.Pow(stagenum, 1.5 + r.NextDouble()), 0, MidpointRounding.AwayFromZero)));
+                    e.SetLuk(Convert.ToInt32(Math.Round(e.luk + Math.Pow(stagenum, 1.5 + r.NextDouble()), 0, MidpointRounding.AwayFromZero)));
                     e.rebirth_time = -1;
                 }
             }
