@@ -242,7 +242,7 @@ namespace NRP_Server
             AllSendPacket(Packet.CharacterCreate(u));
             u.moveto(_x, _y, u.direction);
             u.ReloadFieldf();
-
+            u.userData.clientData.SendPacket(Packet.CharacterStatusUpdate(u));
             return true;
         }
 
@@ -299,6 +299,7 @@ namespace NRP_Server
             foreach (UserCharacter ui in Users.Values) {
                 if (ui.EverReload == 0) {
                     ui.ReloadField();
+                    ui.userData.clientData.SendPacket(Packet.CharacterStatusUpdate(ui));
                     ui.EverReload = 1;
                 }
             }

@@ -514,8 +514,6 @@ namespace NRP_Server
             if (dmg != "Miss")
                 hp -= ToInt(dmg);
 
-            if (NoDamage == 1) { dmg = "1"; }
-
             if (hp > maxhp)
                 hp = maxhp;
 
@@ -558,14 +556,15 @@ namespace NRP_Server
             }
             else if (hp <= 0 && rogueno != -1) {
                 if (rogueno >= 0) { userData.clientData.SendPacket(Packet.RogueReload(Rogue.rogues[rogueno], -1)); }
-                rogueno = -1;
-
                 hp = maxhp;
-                dmg = (-maxhp).ToString();
+                rogueno = -1;
                 fieldData.leave(no);
+                
                 Map.Maps[1].Fields[0].join(this, 11, 9);
+                
                 userData.clientData.SendPacket(Packet.UserChat("\\C[250,50,50]당신은 죽었습니다!"));
-                userData.clientData.SendPacket(Packet.CharacterStatusUpdate(this));
+                
+                
             }
             else { fieldData.AllSendPacket(Packet.CharacterDamage(this, dmg, critical)); }
             
