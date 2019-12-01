@@ -25,6 +25,7 @@ namespace NRP_Server
             Command InnerReload = new Command("/iwr");
             // /give user_name item_no item_num
             Command give = new Command("/give (.*) ([0-9]+) ([0-9]+)");
+            Command tppos = new Command("/tppos ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+)");
             Command notice = new Command("/notice (.*)");
             
 
@@ -191,9 +192,23 @@ namespace NRP_Server
                     return true;
                 }
 
+            if (tppos.isMatch(msg))
+                if (UserData.Users[clientData].admin)
+                {
+                    string[] data = tppos.MatchData(msg);
+
+                    UserCharacter c = UserData.Users[clientData].character;
+
+                    UserData.Users[clientData].character.fieldData.leave(UserData.Users[clientData].character.no);
+                    if (!Map.Maps[Convert.ToInt32(data[1])].Fields.ContainsKey(Convert.ToInt32(data[2]))) { Map.Maps[Convert.ToInt32(data[1])].newField(Convert.ToInt32(data[2])); }
+                    Map.Maps[Convert.ToInt32(data[1])].Fields[Convert.ToInt32(data[2])].join(c, Convert.ToInt32(data[3]), Convert.ToInt32(data[4]));
+
+                    return true;
+                }
 
 
-             return false;
+
+            return false;
         }
     }
 }

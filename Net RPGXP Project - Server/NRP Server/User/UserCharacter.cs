@@ -475,6 +475,7 @@ namespace NRP_Server
             if (!fieldData.portal(this))
                 if (this == null) { return; }
                 fieldData.AllSendPacket(Packet.Move(this));
+            //로그라이크 - 다음 스테이지
             if (x == 13 && y == 0 && rogueno != -1) {
                 if (Rogue.rogues[rogueno].NowStage.isalldead())
                 {
@@ -484,6 +485,58 @@ namespace NRP_Server
                     userData.clientData.SendPacket(Packet.Notice(255, 0, 0, "모든 몬스터가 제거되지 않았습니다."));
                 }
             }
+            int oldseed = fieldData.seed;
+            int oldx = x;
+            int oldy = y;
+            if (x == 499 && fieldData.mapid == 7) {
+                fieldData.leave(this.no);
+                if (!Map.Maps[24].Fields.ContainsKey(oldseed)) { Map.Maps[24].newField(oldseed); }
+                Map.Maps[24].Fields[oldseed].join(this, 0, oldy);
+             }
+            if (y == 499 && fieldData.mapid == 7)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[22].Fields.ContainsKey(oldseed)) { Map.Maps[22].newField(oldseed); }
+                Map.Maps[22].Fields[oldseed].join(this, oldx, 0);
+            }
+            if (y == 0 && fieldData.mapid == 22)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[7].Fields.ContainsKey(oldseed)) { Map.Maps[7].newField(oldseed); }
+                Map.Maps[7].Fields[oldseed].join(this, oldx, 499);
+            }
+            if (x == 499 && fieldData.mapid == 22)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[23].Fields.ContainsKey(oldseed)) { Map.Maps[23].newField(oldseed); }
+                Map.Maps[23].Fields[oldseed].join(this, 0, oldy);
+            }
+            if (x == 0 && fieldData.mapid == 23)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[22].Fields.ContainsKey(oldseed)) { Map.Maps[22].newField(oldseed); }
+                Map.Maps[22].Fields[oldseed].join(this, 499, oldy);
+            }
+            if (y == 0 && fieldData.mapid == 23)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[24].Fields.ContainsKey(oldseed)) { Map.Maps[24].newField(oldseed); }
+                Map.Maps[24].Fields[oldseed].join(this, oldx, 499);
+            }
+            if (x == 0 && fieldData.mapid == 24)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[7].Fields.ContainsKey(oldseed)) { Map.Maps[7].newField(oldseed); }
+                Map.Maps[7].Fields[oldseed].join(this, 499, oldy);
+            }
+            if (y == 499 && fieldData.mapid == 24)
+            {
+                fieldData.leave(this.no);
+                if (!Map.Maps[23].Fields.ContainsKey(oldseed)) { Map.Maps[23].newField(oldseed); }
+                Map.Maps[23].Fields[oldseed].join(this, oldx, 0);
+            }
+
+
 
 
         }

@@ -17,7 +17,7 @@ namespace NRP_Server
         }
         #endregion
         // Static Variables
-        public const int MAP_SIZE = 21;
+        public const int MAP_SIZE = 25;
         public static Dictionary<int, Map> Maps = new Dictionary<int, Map>();
 
         public static void loadData()
@@ -92,6 +92,7 @@ namespace NRP_Server
                     portalData.Add($"{obj.x},{obj.y}", obj);
                     count++;
                 }
+
                 Msg.Info($"[맵] {id}번 {count} 개의 포탈 로드 완료");
             }
             catch(Exception e)

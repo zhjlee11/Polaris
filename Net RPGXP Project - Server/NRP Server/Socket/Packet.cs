@@ -589,7 +589,9 @@ namespace NRP_Server
 
                             }
                             UserData.Users[clientData].character.fieldData.leave(UserData.Users[clientData].character.no);
-                            Map.Maps[1].Fields[roomno].join(UserData.Users[clientData].character, x, y);
+                            int numab = Command.rand.Next(4);
+                            Map.Maps[ToInt(new ArrayList() { 7, 22, 23, 24 }[numab])].newField(roomno);
+                            Map.Maps[ToInt(new ArrayList() { 7, 22, 23, 24 }[numab])].Fields[roomno].join(UserData.Users[clientData].character, x, y);
                             u = null;
                         }
                         break;
@@ -851,6 +853,8 @@ namespace NRP_Server
 
         public static Hashtable Login(UserData u)
         {
+            ArrayList charimagelist = new ArrayList() { "chr_maingirl.png", "chr_mainboy.png" };
+
             int count = 0;
             Hashtable msg = new Hashtable();
             msg.Add("part", USER_LOGIN);
@@ -860,7 +864,11 @@ namespace NRP_Server
                 msg.Add(count.ToString() + "char_name", c.name);
                 msg.Add(count.ToString() + "char_level", c.level);
                 msg.Add(count.ToString() + "char_job", c.job);
+                /*if (!charimagelist.Contains(c.image)) { msg.Add(count.ToString() + "char_image", charimagelist[new Random().Next(0, charimagelist.ToArray().Length)].ToString()); }
+                else { msg.Add(count.ToString() + "char_image", c.image); }*/
                 msg.Add(count.ToString() + "char_image", c.image);
+
+
             }
             msg.Add("count", count);
             //msg.Add("name", u.name);
